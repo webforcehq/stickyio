@@ -1,0 +1,32 @@
+{
+    "name": "webforcehq/sticky-io",
+    "description": "PHP SDK that consumes the API services from https://sticky.io.com",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WebforceHQ",
+            "email": "fordonez@webforcehq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebforceHQ\\Stickyio\\": "src/",
+            "WebforceHQ\\Stickyio\\Models\\": "src/models/",
+            "WebforceHQ\\Stickyio\\Requests\\": "src/requests/",
+            "WebforceHQ\\Stickyio\\Exceptions\\": "src/exceptions/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebforceHQ\\Stickyio\\Tests\\": "tests/"
+        }
+    }
+}
